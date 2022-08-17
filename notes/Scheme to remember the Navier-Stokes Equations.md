@@ -1,11 +1,11 @@
 ---
 attachments: [Clipboard_2022-08-17-15-48-30.png]
-title: Scheme to rememebr Navier-Stokes Equation
+title: Scheme to remember the Navier-Stokes Equations
 created: '2022-08-17T14:48:13.863Z'
-modified: '2022-08-17T14:48:54.994Z'
+modified: '2022-08-17T14:50:09.903Z'
 ---
 
-# Scheme to rememebr Navier-Stokes Equation
+# Scheme to remember the Navier-Stokes Equations
 ![](@attachment/Clipboard_2022-08-17-15-48-30.png)
 
 

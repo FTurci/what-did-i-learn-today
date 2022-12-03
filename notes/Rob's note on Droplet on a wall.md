@@ -1,18 +1,16 @@
 ---
 title: Rob's note on Droplet on a wall
 created: '2022-10-27T13:36:48.963Z'
-modified: '2022-10-27T13:37:22.694Z'
+modified: '2022-11-02T13:57:48.894Z'
 ---
 
 # Rob's note on Droplet on a wall
 
 note on Young's equation for contact angle. This seems like an undergraduate-level exercise but it's not trivial.
 
-\title{
-I. STUFF
-}
+## Preamble
 
-We have in mind a wetting droplet on a flat surface. (Either $2 \mathrm{~d}$ or $3 \mathrm{~d}$ setup.)
+We have in mind a wetting droplet on a flat surface. (Either $2d$ or $3d$ setup.)
 
 The liquid-vapour surface tension is $\gamma_{L V}$. The wall-liquid and wall-vapour surface tensions are $\gamma_{W L}$ and $\gamma_{W}$ respectively. In fact we only need two parameters which are
 
@@ -32,7 +30,7 @@ This obviously works only if $\left|\gamma_{2}\right|<\gamma_{1}$. If $\gamma_{2
 
 This all holds on macroscopic scale.
 
-\section{A. Minimisation of free energy}
+### Minimisation of free energy
 
 To derive Young's equation, it is sufficient to minimise the surface free energy, subject to the constraint that we have a fixed amount of liquid. The surface free energy (using language appropriate to 3d) is:
 
@@ -79,7 +77,7 @@ We are working at fixed $\mu$ so we treat the last term as constant. ${ }^{2}$ T
 
 Note on physics: the pressure of the liquid inside the droplet ends up slightly larger than the pressure in the vapour, the difference is called Laplace pressure. This also means that the chemical potential $\mu$ must be very slightly larger than the coexistence value (because $P_{\mathrm{liq}}\left(\mu_{c}, T\right)=P_{\mathrm{vap}}\left(\mu_{c}, T\right)$ so non-zero Laplace pressure requires $\left.\mu \neq \mu_{c}\right)$. Other short notes: (i) Since we work on macro-scale, these differences are small (eg droplet curvature is a macroscopic length scale so Laplace pressure is small). (ii) This minimization over geometries only really makes sense in a canonical $(N V T)$ setup, but if we had (eg) a molecular dynamics simulation then the pressure and chemical potential inside the droplet could be measured (virial, widom insertion, etc).
 
-\section{B. 2d case, by calculus of variations}
+### 2d case, by calculus of variations
 
 Let's do the $2 \mathrm{~d}$ case. (Following wiki page on wetting but we go slowly and carefully.)
 
@@ -128,7 +126,7 @@ $$
 \delta L=\left[\gamma_{1} \frac{f^{\prime}(R)}{\sqrt{1+f^{\prime}(R)^{2}}}-\mu\right] \delta f(R)-\int_{0}^{R}\left[\gamma_{1} \frac{d}{d x}\left(\frac{f^{\prime}}{\sqrt{1+f^{\prime 2}}}\right)+\lambda\right] \delta f d x+\delta R\left[\gamma_{1} \sqrt{1+f^{\prime}(R)^{2}}-\gamma_{2}-\mu f^{\prime}(R)\right]
 $$
 
-![](https://cdn.mathpix.com/cropped/2022_10_27_011ef445e65a20504738g-3.jpg?height=57&width=1713&top_left_y=403&top_left_x=180)
+Since $\delta L=0$  forall function $\delta f$ etc. then all three objects in [..] must vanish. Fi rthe first $[...]$ we see that
 
 $$
 \mu=\gamma_{1} \frac{f^{\prime}(R)}{\sqrt{1+f^{\prime}(R)^{2}}}
@@ -191,7 +189,7 @@ Also note that we recover $\lambda=\gamma_{1} / r$, so this $\lambda$ is still t
 
 This computation is not particularly transparent, it does seem possible that we would be better to parameterise by a different variable $($ instead of $r)$
 
-\section{3d case, after assuming droplet shape}
+## 3d case, after assuming droplet shape
 
 Repeating the $2 \mathrm{~d}$ computation, we get in this case
 
